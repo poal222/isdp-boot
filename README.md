@@ -4,6 +4,14 @@
 mvn clean install org.apache.maven.plugins:maven-deploy-plugin:2.8:deploy -DskipTests
 </code>
 
+当前版本(以推送至ali库中)
+
+        <dependency>
+            <groupId>org.isdp</groupId>
+            <artifactId>isdp-boot</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
+
 2、工作原理
 
 参照springboot及vertx-boot设计，实现通过注解启动vertx应用的方法
