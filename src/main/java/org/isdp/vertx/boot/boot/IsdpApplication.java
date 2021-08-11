@@ -246,18 +246,6 @@ public class IsdpApplication {
 
   /**
    *
-   *
-   *     // Several cases need to be detected here.
-   *     // The first argument may be "--help" => must display help message
-   *     // The first argument may be "--version" => must execute the version command.
-   *     // The first argument may be a command and the second "--help" => display command usage
-   *     // The first argument may be a command => command execution
-   *     // If the first argument is not a command, try to see if there is a given main verticle  and execute the default
-   *     // command with the arguments (prepended with the main verticle).
-   *     // Finally, we have two fallbacks
-   *     // - if no args (and so no main verticle) - display usage
-   *     // - if args has been set, display command usage.
-   *
    * @param args 接受来自于命令行的参数
    * @param bootClass 启动类
    * @param vertx vertx

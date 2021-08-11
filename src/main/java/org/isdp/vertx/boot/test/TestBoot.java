@@ -19,35 +19,4 @@ public class TestBoot{
         IsdpApplication isdpApplication =  new IsdpApplication();
         isdpApplication.Run(args,TestBoot.class, vertx);
     }
-//public class TestBoot  extends AbstractVerticle {
-//    private static String exampleDir = "ISDP_MC\\boot\\src\\main\\java\\";
-
-    // Convenience method so you can run it in your IDE
-//    public static void main(String[] args) {
-////        Launcher.main(new String[] { "run", TestBoot.class.getName(), "-ha"});
-//        try {
-//            // We need to use the canonical file. Without the file name is .
-//            File current = new File(".").getCanonicalFile();
-//            System.out.println(current.getName());
-//            if (exampleDir.startsWith(current.getName()) && !exampleDir.equals(current.getName())) {
-//                exampleDir = exampleDir.substring(current.getName().length() + 1);
-//                System.out.println(exampleDir);
-//            }
-//        } catch (IOException e) {
-//            // Ignore it.
-//        }
-//        System.setProperty("vertx.cwd", exampleDir);
-//    }
-
-//    @Override
-//    public void start() throws Exception {
-//        vertx.createHttpServer().requestHandler(req -> {
-//            final String name = ManagementFactory.getRuntimeMXBean().getName();
-//            req.response().end("Happily served by " + name);
-//        }).listen(8080);
-//    }
-//public static void main(String[] args) {
-//        Launcher.main(new String[]{"bare"});
-//}
-
 }
