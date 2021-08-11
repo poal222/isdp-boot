@@ -28,7 +28,7 @@ public class TestBoot{
 @DeployVerticle 部署verticle使用，样例如下
 
 <code>
-    @DeployVerticle(name = "TestBoot1")
+@DeployVerticle(name = "TestBoot1")
 public class TestBoot1 extends AbstractVerticle {
     @Override
     public void start(Promise<Void> startPromise) throws Exception {
