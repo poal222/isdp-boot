@@ -13,6 +13,7 @@ import io.vertx.core.*;
 import io.vertx.core.json.JsonObject;
 
 import org.isdp.vertx.boot.annotation.Application;
+import org.isdp.vertx.boot.cache.CacheConfig;
 import org.isdp.vertx.boot.porpertise.ApplicationPropertise;
 import org.isdp.vertx.boot.test.TestBoot;
 import org.slf4j.Logger;
@@ -125,6 +126,8 @@ public class IsdpApplication {
       VerticleLoader verticleLoader =  getVerticleLoader(runBootClass,vertx,isdpCurrentConfig);
       // 4、部署类
       this.deployVerticle( vertxFuture,verticleLoader);
+      // 5、 加载 缓存组件
+      this.initCache(config);
       // 5、初始化默认数据源
       this.initDataSource();
 
@@ -135,6 +138,14 @@ public class IsdpApplication {
 
 
 
+  }
+
+  /**
+   * 加载缓存组件
+   * @param config
+   */
+  private void initCache(JsonObject config) {
+    CacheConfig.initEnableCache(config.getJsonObject("isdp").getJsonObject(applicationOptions.getEnv()).getJsonObject("cache"));
   }
 
   /**

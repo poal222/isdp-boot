@@ -8,10 +8,7 @@ package org.isdp.vertx.boot.test;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;
-import io.vertx.core.Vertx;
-import org.isdp.vertx.boot.annotation.Application;
 import org.isdp.vertx.boot.annotation.DeployVerticle;
-import org.isdp.vertx.boot.boot.IsdpApplication;
 
 
 @DeployVerticle(name = "TestBoot1")

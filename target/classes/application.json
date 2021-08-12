@@ -29,6 +29,12 @@
       "tcpServer": {
         "port": 4321,
         "ip": "localhost"
+      },
+      "cache": {
+        "ttl": 200,
+        "name": "org.idsp.vertx.cache.CacheProvider",
+        "type": "local",
+        "enable": true
       }
     },
     "prod": {

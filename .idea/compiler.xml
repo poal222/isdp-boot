@@ -6,8 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="tcp" />
+        <module name="core" />
+        <module name="audit" />
+        <module name="Lian_elect" />
         <module name="isdp-boot" />
+        <module name="monitor" />
+        <module name="isdp-cache" />
+        <module name="gateway" />
+        <module name="tenant" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="boot" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
